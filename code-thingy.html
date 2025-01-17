@@ -227,11 +227,11 @@
 
       function deleteTetromino() {
         const coords = setCoords(curTetromino, state.pos);
-        coords.forEach(({ x, y, z }) => z && drawTile(x, y, "white"));
+        coords.forEach(({ x, y, z }) => z && drawTile(x, y, "black"));
       }
 
       function drawNextTetromino() {
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
         ctx.fillRect(301, 9, 158, 68);
 
         const coords = setCoords(nextTetromino, { x: 14.5, y: 0.5 });
