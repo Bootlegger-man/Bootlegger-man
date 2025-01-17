@@ -31,6 +31,7 @@
 
       const canvas = document.getElementById("my-canvas");
       const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "black";
       canvas.width = 936;
       canvas.height = 956;
 
@@ -183,12 +184,12 @@
         ctx.fillText(state.winOrLose, 310, 311);
         ctx.strokeRect(300, 282, 161, 45);
 
-        ctx.fillText("Manual", 300, 350);
+        ctx.fillText("Controls", 300, 350);
         ctx.strokeRect(300, 358, 161, 112);
         ctx.font = "19px Arial";
         ctx.fillText("← : Move Left", 310, 380);
         ctx.fillText("→ : Move Right", 310, 400);
-        ctx.fillText(" ↓  : Speed Drop", 310, 420);
+        ctx.fillText(" ↓  : Fast Drop", 310, 420);
         ctx.fillText(" ↑  : Rotate", 310, 440);
         ctx.fillText("Space: Insta-Drop ", 310, 460);
 
