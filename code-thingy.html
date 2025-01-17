@@ -31,7 +31,6 @@
 
       const canvas = document.getElementById("my-canvas");
       const ctx = canvas.getContext("2d");
-      ctx.fillStyle = "black";
       canvas.width = 936;
       canvas.height = 956;
 
@@ -227,11 +226,11 @@
 
       function deleteTetromino() {
         const coords = setCoords(curTetromino, state.pos);
-        coords.forEach(({ x, y, z }) => z && drawTile(x, y, "black"));
+        coords.forEach(({ x, y, z }) => z && drawTile(x, y, "white"));
       }
 
       function drawNextTetromino() {
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "white";
         ctx.fillRect(301, 9, 158, 68);
 
         const coords = setCoords(nextTetromino, { x: 14.5, y: 0.5 });
