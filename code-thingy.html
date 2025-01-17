@@ -156,7 +156,7 @@
       function setupCanvas() {
         ctx.scale(2, 2);
 
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.strokeStyle = "white";
@@ -205,13 +205,13 @@
         ctx.fillText(state.score, 310, 185);
 
         storage.setScore(state.score);
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
         ctx.fillRect(301, 226, 159, 22);
         ctx.fillStyle = "white";
         ctx.fillText(storage.getBestScore(), 310, 245);
 
         state.level = ~~(state.score / 100) + 1;
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
         ctx.fillRect(301, 108, 159, 22);
         ctx.fillStyle = "white";
         ctx.fillText(state.level, 310, 127);
