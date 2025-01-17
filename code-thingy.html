@@ -199,21 +199,21 @@
 
       function updateScore() {
         ctx.font = "21px Arial";
-        ctx.fillStyle = "white";
-        ctx.fillRect(301, 166, 159, 22);
         ctx.fillStyle = "black";
+        ctx.fillRect(301, 166, 159, 22);
+        ctx.fillStyle = "white";
         ctx.fillText(state.score, 310, 185);
 
         storage.setScore(state.score);
-        ctx.fillStyle = "white";
-        ctx.fillRect(301, 226, 159, 22);
         ctx.fillStyle = "black";
+        ctx.fillRect(301, 226, 159, 22);
+        ctx.fillStyle = "white";
         ctx.fillText(storage.getBestScore(), 310, 245);
 
         state.level = ~~(state.score / 100) + 1;
-        ctx.fillStyle = "white";
-        ctx.fillRect(301, 108, 159, 22);
         ctx.fillStyle = "black";
+        ctx.fillRect(301, 108, 159, 22);
+        ctx.fillStyle = "white";
         ctx.fillText(state.level, 310, 127);
       }
 
@@ -395,7 +395,7 @@
         if (
           state.playing &&
           t - state.time > Math.max(fallingSpeed - state.level * 25, 150) &&
-          state.winOrLose !== "게임 오버"
+          state.winOrLose !== "Game Over"
         ) {
           state.time = t;
           canMove("down") && move("down");
