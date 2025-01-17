@@ -7,11 +7,11 @@
     <style>
       body {
         text-align: center;
-        background: #fff;
+        background: #000;
       }
 
       #my-canvas {
-        background: #fff;
+        background: #000;
         margin-left: 10px;
         margin-top: 10px;
       }
@@ -48,7 +48,7 @@
         newCoords: null,
         over: false,
         lock: false,
-        winOrLose: "진행 중",
+        winOrLose: "In Progress",
       };
 
       const toBoardPos = ([x, y]) => [x + state.pos.x, y + state.pos.y];
@@ -165,7 +165,7 @@
         // Next Tetromino //
         ctx.strokeRect(300, 8, 161, 70);
 
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "white";
         ctx.font = "21px Arial";
 
         ctx.fillText("Level", 300, 100);
