@@ -24,19 +24,10 @@
     </div>
     <canvas id="my-canvas"></canvas>
 
-    <button onclick="playSound()">Play Music</button>
-
-    <audio id="audioPlayer">
+     <audio id="audioPlayer" autoplay>
         <source src="https://github.com/Bootlegger-man/Bootlegger-man/blob/Tetris-thing/SoundTrack.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-
-    <script>
-        function playSound() {
-            var audio = document.getElementById("audioPlayer");
-            audio.play();
-        }
-    </script>
     
     <script>
       const delay = (n) => new Promise((r) => setTimeout(r, n));
