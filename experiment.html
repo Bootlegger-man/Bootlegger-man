@@ -25,11 +25,9 @@
     <canvas id="my-canvas"></canvas>
 
     <script>
-    var audio = new Audio('https://github.com/Bootlegger-man/Bootlegger-man/blob/Tetris-thing/SoundTrack.mp3?raw=true');
-    audio.play();
-    </script>
-
-    <script>
+      var audio = new Audio("https://github.com/Bootlegger-man/Bootlegger-man/blob/Tetris-thing/SoundTrack.mp3?raw=true");
+      audio.play();
+      
       const delay = (n) => new Promise((r) => setTimeout(r, n));
       const createGrid = (width, height) =>
         [...Array(height)].map(() => Array(width).fill(0));
