@@ -385,9 +385,9 @@
       const gameOver = () => {
         state.winOrLose = "Game Over";
         state.over = true;
-        ctx.fillStyle = "white";
-        ctx.fillRect(310, 283, 140, 40);
         ctx.fillStyle = "black";
+        ctx.fillRect(310, 283, 140, 40);
+        ctx.fillStyle = "white";
         ctx.fillText(state.winOrLose, 310, 311);
       };
 
